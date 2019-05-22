@@ -1,5 +1,5 @@
-import { findIana, findOneIana } from "../src";
-import { Territory, WindowsZoneName } from "../src/enums";
+import { findIana, findOneIana, findWindows } from "../src";
+import { IanaName, Territory, WindowsZoneName } from "../src/enums";
 
 describe("findOneIana()", () => {
   test("returns a IANA time zone when passed just a Windows time zone name", () => {
