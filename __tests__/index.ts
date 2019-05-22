@@ -64,3 +64,15 @@ describe("findIana()", () => {
     expect(findIana(WindowsZoneName.UsMountainStandardTime, "fake" as any)).toBeUndefined();
   });
 });
+
+describe("findWindows", () => {
+  test("returns the Windows time zone for the passed Iana time zone", () => {
+    expect(findWindows(IanaName.AmericaNewYork)).toEqual("Eastern Standard Time");
+    expect(findWindows(IanaName.PacificEaster)).toEqual("Easter Island Standard Time");
+    expect(findWindows(IanaName.Cst6Cdt)).toEqual("Central Standard Time");
+    expect(findWindows(IanaName.AsiaOmsk)).toEqual("Omsk Standard Time");
+  });
+  test("returns `undefined` if the Iana timezone cannot be converted", () => {
+    expect(findWindows("fake time zone" as any)).toBeUndefined();
+  });
+});
