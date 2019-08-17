@@ -1,5 +1,3 @@
-## windows-iana
-
 [![Build Status](https://travis-ci.org/rubenillodo/windows-iana.svg?branch=master)](https://travis-ci.org/rubenillodo/windows-iana)
 [![Coverage Status](https://coveralls.io/repos/github/rubenillodo/windows-iana/badge.svg)](https://coveralls.io/github/rubenillodo/windows-iana)
 
