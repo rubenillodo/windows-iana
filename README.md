@@ -78,6 +78,6 @@ console.log(result); // ["America/New_York", "US/Eastern"]
 ```
 import { getAllIanaWindowsMap } from "windows-iana";
 
-const result = getAllIanaWindowsMap("America/New_York");
+const result = getAllIanaWindowsMap();
 console.log(result.get('America/New_York')); // Eastern Standard Time
 ```
