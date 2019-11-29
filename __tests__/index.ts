@@ -90,7 +90,6 @@ describe("findWindows", () => {
     expect(findWindows(IanaName.AsiaOmsk)).toEqual("Omsk Standard Time");
     expect(findWindows(IanaName.AsiaCalcutta)).toEqual("India Standard Time");
     expect(findWindows(IanaName.AsiaKolkata)).toEqual("India Standard Time");
-    expect(findWindows(IanaName.AsiaKolkata)).toEqual("India Standard Time");
     expect(findWindows("Asia/Kolkata")).toEqual("India Standard Time");
   });
   test("returns `undefined` if the Iana timezone cannot be converted", () => {
