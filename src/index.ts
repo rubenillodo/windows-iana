@@ -1,4 +1,4 @@
-export { IanaName, Territory, WindowsZoneName } from './types';
+export type { IanaName, Territory, WindowsZoneName } from './data';
 export { findIanaAliases } from './findIanaAliases';
 export { findIana } from './findIana';
 export { findWindows } from './findWindows';

@@ -1,6 +1,5 @@
 import { WINDOWS_TO_IANA_MAP } from './data';
-
-import type { IanaName, Territory, WindowsZoneName } from './types';
+import type { IanaName, Territory, WindowsZoneName } from './data';
 import { findIanaAliases } from './findIanaAliases';
 
 export function findIana(windowsTimeZone: WindowsZoneName, territory?: Territory): IanaName[];

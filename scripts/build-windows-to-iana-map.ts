@@ -28,8 +28,8 @@ const readFile = async () => {
 (async () => {
   const map = await readFile();
   fs.writeFileSync(
-    path.join(__dirname, '../src/data/windowsToIanaMap.json'),
-    JSON.stringify(map, null, 2),
+    path.join(__dirname, '../src/data/windowsToIanaMap.ts'),
+    `export const WINDOWS_TO_IANA_MAP = ${JSON.stringify(map, null, 2)} as const;`,
     { encoding: 'utf-8' },
   );
 })();
